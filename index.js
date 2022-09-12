@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateReadme = require("./utils/generate-readme");
+const generateReadme = require("./utils/generateReadme");
 
 const prompts = [
   {
