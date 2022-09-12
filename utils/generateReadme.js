@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 //function for generating markdown for file
-const generateMarkdown = async (data) => {
+const generateReadme = async (data) => {
   console.log("Markdown generated");
   console.log(data);
 
