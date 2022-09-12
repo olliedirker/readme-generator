@@ -1,5 +1,9 @@
-const fetch = require("node-fetch");
-
+function renderBadges(username, repo) {
+  let ret = ""
+  ret += `
+![Analysis](https://img.shields.io/github/languages/top/${username}/${repo})`
+  return ret
+}
 //function for generating markdown for file
 const generateReadme = async (data) => {
   console.log("Markdown generated");
@@ -21,7 +25,7 @@ https://github.com/${data.github}
   }
 
   //creates the repo badges
-  addSections += `${renderBadges(data.github, data.repo)}`;
+  addSections += `${renderBadges(data.github, data.repo)}`
 
   //gets description data
   if (data.description) {
